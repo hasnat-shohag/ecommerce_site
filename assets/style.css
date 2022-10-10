@@ -1,3 +1,6 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 .container{
     width: 1200px;
     margin: auto;
@@ -31,16 +34,21 @@
 #header .content .right ul li{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
     cursor: pointer;
 }
 #header .content .right ul li .currency{
     position: relative;
 }
-#header .content .right ul li i{}
+#header .content .right ul li i,
 #header .content .right ul li a{
     color: rgb(104, 100, 100);
 }
+/* #header .content .right ul li i{
+    align-items: center;
+    align-content: center;
+} */
 #header .content .right ul li span{}
 
 #currency{}

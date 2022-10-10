@@ -16,12 +16,14 @@ body{
 
 #header .content .left{}
 #header .content .left p{
+    font-size: 0.813rem;
     color: rgb(75, 72, 72);
 }
 
 #header .content .right {
     /* border: 1px solid red; */
     flex: 1;
+    font-size: 0.813rem;
 }
 
 #header .content .right ul{
@@ -29,7 +31,7 @@ body{
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 #header .content .right ul li{
     display: flex;

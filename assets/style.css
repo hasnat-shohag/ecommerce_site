@@ -1,0 +1,77 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+#header{
+    border-bottom: 1px solid gray;
+    margin: 0 auto;
+}
+
+#header .content{
+    display: flex;
+}
+
+#header .content .left{}
+#header .content .left p{
+    color: rgb(75, 72, 72);
+}
+
+#header .content .right {
+    /* border: 1px solid red; */
+    flex: 1;
+}
+
+#header .content .right ul{
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#header .content .right ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+#header .content .right ul li .currency{
+    position: relative;
+}
+#header .content .right ul li i{}
+#header .content .right ul li a{
+    color: rgb(104, 100, 100);
+}
+#header .content .right ul li span{}
+
+#currency{}
+.pop-up ul{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.pop-up ul li{
+    padding: 10px;
+}
+
+.pop-up{
+    width: 120px;
+    position: absolute;
+    top: 35px;
+    right:16%;
+    visibility: hidden;
+    opacity: 0;
+    /* border: 1px solid red;  */
+}
+.pop-up-show {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000;
+}
+.pop-up ul{
+    border: 1px solid #ddd;
+    align-items: flex-end;
+}
+.pop-up ul li{
+    cursor: pointer;   
+    width: 100%;
+}

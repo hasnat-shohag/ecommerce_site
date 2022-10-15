@@ -5,6 +5,8 @@ body{
     width: 1200px;
     margin: auto;
 }
+/* header part start */
+
 #header{
     border-bottom: 1px solid gray;
     margin: 0 auto;
@@ -85,3 +87,74 @@ body{
     cursor: pointer;   
     width: 100%;
 }
+
+/* header part end  */
+
+/* Navbar Part Start  */
+
+#navbar{}
+#navbar .content{
+    display: flex;
+    justify-content: space-between;
+}
+#navbar .content .left{
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .content .left .logo {
+    padding: 0px 50px 0px 0px;
+}
+#navbar .content .left .logo a{}
+#navbar .content .left .logo a img{}
+#navbar .content .left .nav{}
+#navbar .content .left .nav a{}
+#navbar .content .left .nav a i{}
+#navbar .content .mid{
+    flex: 1;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+#navbar .content .mid form{
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#navbar .content .mid form input{
+    /* border: none; */
+    width: 70%;
+    height: 100%;
+}
+#navbar .content .mid form select{
+    width: 20%;
+    height: 100%;
+}
+#navbar .content .mid form button{
+    height: 100%;
+    width: 10%;
+}
+#navbar .content .mid form button i{}
+
+#navbar .content .right{
+    
+}
+#navbar .content .right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .content .right ul li{
+    padding: 0px 15px 0px 15px;
+}
+#navbar .content .right ul li a{}
+#navbar .content .right ul li a i{}
+#navbar .content .right ul li span{}
+
+
+
+
+
+/* Navbar Part End  */

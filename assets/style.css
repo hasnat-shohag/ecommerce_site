@@ -101,6 +101,7 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
+    height: 40px;
 }
 
 #navbar .content .left{
@@ -116,7 +117,9 @@ body{
 #navbar .content .left .logo a img{}
 #navbar .content .left .nav{}
 #navbar .content .left .nav a{}
-#navbar .content .left .nav a i{}
+#navbar .content .left .nav a i{
+    color: #333e48;
+}
 #navbar .content .mid{
     flex: 1;
     /* border: 1px solid red; */
@@ -124,7 +127,7 @@ body{
 }
 #navbar .content .mid form{
     height: 100%;
-    border: 1px solid #e0bf1d;
+    border: 2px solid #e0bf1d;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -137,8 +140,10 @@ body{
     outline: 0;
     border: none;
     background: transparent;
+    padding: 0px 10px 0px 20px;
 }
 #navbar .content .mid form select{
+    color: #606060;
     width: 20%;
     height: 100%;
     background: transparent;
@@ -146,16 +151,14 @@ body{
     margin-right: 10px;
     /* padding-right: 15px; */
 }
-#navbar .content .mid form select :active{
-    border: none;
-}
+
 #navbar .content .mid form button{
     height: 100%;
     width: 10%;
     background-color: #fed700;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    border: none;
+    border: 1px solid #fed700;
 }
 #navbar .content .mid form button i{
     font-size: 25px;
@@ -168,14 +171,16 @@ body{
 #navbar .content .right ul{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
+    align-content: center;
+    height: 100%;
 }
 #navbar .content .right ul li{
     /* padding: 0px 15px 0px 15px; */
 }
 #navbar .content .right ul li a{
     position: relative;
+    color: #333e48;
 }
 #navbar .content .right ul li a i{
     margin-right: 20px;
@@ -190,7 +195,6 @@ body{
     bottom: -19px;
     left: 13px;
     text-align: center;
-
 }
 
 

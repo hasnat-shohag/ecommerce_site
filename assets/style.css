@@ -56,47 +56,53 @@ body{
 #header .content .right ul li span{}
 
 #currency{}
-.pop-up ul{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-.pop-up ul li{
-    padding: 10px;
-}
 
-.pop-up{
+#header .content .right ul li {
+    position: relative;
+}
+#header .content .right ul li ul{
     width: 120px;
     position: absolute;
-    top: 35px;
-    right:16%;
+    top: 25px;
+    left: 0;
     visibility: hidden;
     opacity: 0;
+    display: block;
+    background-color: white;
+    outline: 1px solid black;
+    border-radius: 10px;
+    z-index: 999;
+    padding: 10px;
+    height: 100px;
+    box-sizing: border-box;
+    transition: 0.3s;
     /* border: 1px solid red;  */
 }
-.pop-up-show {
+#header .content .right ul li ul li{
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#header .content .right ul li:hover > ul {
     visibility: visible;
     opacity: 1;
     z-index: 1000;
 }
-.pop-up ul{
-    border: 1px solid #ddd;
-    align-items: flex-end;
-}
-.pop-up ul li{
-    cursor: pointer;   
-    width: 100%;
-}
+
 
 /* header part end  */
 
 /* Navbar Part Start  */
 
-#navbar{}
+#navbar{
+    padding-top: 30px;
+}
 #navbar .content{
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
+
 #navbar .content .left{
     display: flex;
     margin-right: 20px;
@@ -113,30 +119,48 @@ body{
 #navbar .content .left .nav a i{}
 #navbar .content .mid{
     flex: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
 }
 #navbar .content .mid form{
     height: 100%;
-    border: 1px solid black;
+    border: 1px solid #e0bf1d;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 #navbar .content .mid form input{
     /* border: none; */
     width: 70%;
     height: 100%;
+    outline: 0;
+    border: none;
+    background: transparent;
 }
 #navbar .content .mid form select{
     width: 20%;
     height: 100%;
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+    /* padding-right: 15px; */
+}
+#navbar .content .mid form select :active{
+    border: none;
 }
 #navbar .content .mid form button{
     height: 100%;
     width: 10%;
+    background-color: #fed700;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
 }
-#navbar .content .mid form button i{}
+#navbar .content .mid form button i{
+    font-size: 25px;
+    /* font-weight: 400; */
+}
 
 #navbar .content .right{
     
@@ -145,14 +169,29 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 #navbar .content .right ul li{
-    padding: 0px 15px 0px 15px;
+    /* padding: 0px 15px 0px 15px; */
 }
-#navbar .content .right ul li a{}
-#navbar .content .right ul li a i{}
-#navbar .content .right ul li span{}
+#navbar .content .right ul li a{
+    position: relative;
+}
+#navbar .content .right ul li a i{
+    margin-right: 20px;
+}
+#navbar .content .right ul li a .total-amount{}
+#navbar .content .right ul li a .total-qty{
+    position: absolute;
+    background-color: #fed700;
+    color: #333e48;
+    padding: 5px;
+    border-radius: 30px;
+    bottom: -19px;
+    left: 13px;
+    text-align: center;
 
+}
 
 
 

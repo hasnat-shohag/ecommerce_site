@@ -101,6 +101,7 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 40px;
 }
 
@@ -130,6 +131,7 @@ body{
     border: 2px solid #e0bf1d;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
 }

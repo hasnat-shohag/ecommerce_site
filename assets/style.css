@@ -1,23 +1,26 @@
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
-.container{
+
+.container {
     width: 1200px;
     margin: auto;
 }
+
 /* header part start */
 
-#header{
+#header {
     border-bottom: 1px solid gray;
     margin: 0 auto;
 }
 
-#header .content{
+#header .content {
     display: flex;
 }
 
-#header .content .left{}
-#header .content .left p{
+#header .content .left {}
+
+#header .content .left p {
     font-size: 0.813rem;
     color: rgb(75, 72, 72);
 }
@@ -28,39 +31,44 @@ body{
     font-size: 0.813rem;
 }
 
-#header .content .right ul{
+#header .content .right ul {
     justify-content: flex-end;
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
     gap: 20px;
 }
-#header .content .right ul li{
+
+#header .content .right ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
     cursor: pointer;
 }
-#header .content .right ul li .currency{
+
+#header .content .right ul li .currency {
     position: relative;
 }
+
 #header .content .right ul li i,
-#header .content .right ul li a{
+#header .content .right ul li a {
     color: rgb(104, 100, 100);
 }
+
 /* #header .content .right ul li i{
     align-items: center;
     align-content: center;
 } */
-#header .content .right ul li span{}
+#header .content .right ul li span {}
 
-#currency{}
+#currency {}
 
 #header .content .right ul li {
     position: relative;
 }
-#header .content .right ul li ul{
+
+#header .content .right ul li ul {
     width: 120px;
     position: absolute;
     top: 25px;
@@ -78,12 +86,13 @@ body{
     transition: 0.3s;
     /* border: 1px solid red;  */
 }
-#header .content .right ul li ul li{
+
+#header .content .right ul li ul li {
     padding: 5px;
     margin: 0 auto;
 }
 
-#header .content .right ul li:hover > ul {
+#header .content .right ul li:hover>ul {
     visibility: visible;
     opacity: 1;
     z-index: 1000;
@@ -94,10 +103,11 @@ body{
 
 /* Navbar Part Start  */
 
-#navbar{
+#navbar {
     padding-top: 30px;
 }
-#navbar .content{
+
+#navbar .content {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -105,28 +115,36 @@ body{
     align-items: center;
 }
 
-#navbar .content .left{
+#navbar .content .left {
     display: flex;
     margin-right: 20px;
     justify-content: space-between;
     align-items: center;
 }
+
 #navbar .content .left .logo {
     padding: 0px 50px 0px 0px;
 }
-#navbar .content .left .logo a{}
-#navbar .content .left .logo a img{}
-#navbar .content .left .nav{}
-#navbar .content .left .nav a{}
-#navbar .content .left .nav a i{
+
+#navbar .content .left .logo a {}
+
+#navbar .content .left .logo a img {}
+
+#navbar .content .left .nav {}
+
+#navbar .content .left .nav a {}
+
+#navbar .content .left .nav a i {
     color: #333e48;
 }
-#navbar .content .mid{
+
+#navbar .content .mid {
     flex: 1;
     /* border: 1px solid red; */
     box-sizing: border-box;
 }
-#navbar .content .mid form{
+
+#navbar .content .mid form {
     height: 100%;
     border: 2px solid #e0bf1d;
     display: flex;
@@ -135,7 +153,8 @@ body{
     box-sizing: border-box;
     border-radius: 20px;
 }
-#navbar .content .mid form input{
+
+#navbar .content .mid form input {
     /* border: none; */
     width: 70%;
     height: 100%;
@@ -144,7 +163,8 @@ body{
     background: transparent;
     padding: 0px 10px 0px 20px;
 }
-#navbar .content .mid form select{
+
+#navbar .content .mid form select {
     color: #606060;
     width: 20%;
     height: 100%;
@@ -154,7 +174,7 @@ body{
     /* padding-right: 15px; */
 }
 
-#navbar .content .mid form button{
+#navbar .content .mid form button {
     height: 100%;
     width: 10%;
     background-color: #fed700;
@@ -162,33 +182,44 @@ body{
     border-top-right-radius: 15px;
     border: 1px solid #fed700;
 }
-#navbar .content .mid form button i{
+
+#navbar .content .mid form button i {
     font-size: 25px;
     /* font-weight: 400; */
 }
 
-#navbar .content .right{
-    
-}
-#navbar .content .right ul{
+#navbar .content .right {}
+
+#navbar .content .right ul {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-content: center;
     height: 100%;
 }
-#navbar .content .right ul li{
+
+#navbar .content .right ul li {
+    position: relative;
     /* padding: 0px 15px 0px 15px; */
 }
-#navbar .content .right ul li a{
+
+#navbar .content .right ul li a {
     position: relative;
     color: #333e48;
 }
-#navbar .content .right ul li a i{
+
+#navbar .content .right ul li a i {
     margin-right: 20px;
 }
-#navbar .content .right ul li a .total-amount{}
-#navbar .content .right ul li a .total-qty{
+
+#navbar .content .right ul li a .cart:hover #navbar .content .right .cart_content{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#navbar .content .right ul li a .total-amount {}
+
+#navbar .content .right ul li a .total-qty {
     position: absolute;
     background-color: #fed700;
     color: #333e48;
@@ -199,7 +230,54 @@ body{
     text-align: center;
 }
 
+#navbar .content .right .cart_content {
+    position: absolute;
+    width: 330px;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    visibility: visible;
+    /* border: 1px solid red; */
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 1px 1px 1px 1px #554747;
+    border:1px solid #554747;
+    border-radius: 5px;
+    z-index: 999;
+}
 
+#navbar .content .right .cart_content .cart_elements {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#navbar .content .right .cart_content .cart_elements>li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 10px;
+}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item {
+    display: flex;
+    /* border: 1px solid green; */
+    padding: 0;
+}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li {
+    /* border: 1px solid #333e48; */
+}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li img {}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li h3 {}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li span {}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li a {}
+
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li a i {}
 
 
 /* Navbar Part End  */

@@ -271,9 +271,15 @@ body {
 
 #navbar .content .right .cart_content .cart_elements .cart_elements_item li img {}
 
-#navbar .content .right .cart_content .cart_elements .cart_elements_item li h3 {}
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    color: #1b6dba;
+}
 
-#navbar .content .right .cart_content .cart_elements .cart_elements_item li span {}
+#navbar .content .right .cart_content .cart_elements .cart_elements_item li span {
+    
+}
 
 #navbar .content .right .cart_content .cart_elements .cart_elements_item li a {}
 

@@ -247,11 +247,11 @@ body {
     border:1px solid #554747;
     border-radius: 5px;
     z-index: 999;
-    transition-duration: 0.3s;
 }
 .cart_content_show{
     opacity: 1;
     visibility: visible;
+    transition-duration: .4s;
 }
 #navbar .content .right .cart_content .cart_elements {
     display: flex;

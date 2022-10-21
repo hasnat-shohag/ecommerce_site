@@ -1,7 +1,12 @@
-// const currency_check = document.querySelector(".currency");
+const nav = document.getElementById('nav');
+nav.addEventListener('click', function(e){
+    e.preventDefault();
+    // console.log("Clicked");
+    document.querySelector(".sidebar").classList.toggle("sidebar_show");
+})
 
-// currency_check.addEventListener('click', function(e){
-//     e.preventDefault();
-//     console.log("Clicked");
-//     document.querySelector(".pop-up").classList.toggle("pop-up-show");
-// })
+document.querySelector('.sidebar_close').addEventListener('click', function(e){
+    e.preventDefault();
+    // console.log("Clicked");
+    document.querySelector(".sidebar").classList.toggle("sidebar_show");
+})

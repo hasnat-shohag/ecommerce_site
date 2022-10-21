@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
 .container {
@@ -301,3 +302,52 @@ body {
     color: white;
 }
 /* Navbar Part End  */
+
+/* Sidebar Start  */
+.sidebar{
+    position: absolute;
+    width: 350px;
+    height: 100vh;
+    /* border: 1px solid red; */
+    left: -350px;
+    top: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.3s;
+}
+.sidebar_show{
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+}
+#sidebar .sidebar_content{
+    padding: 10px 25px;
+    /* border: 1px solid blue; */
+}
+#sidebar .sidebar_content a i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+#sidebar .sidebar_content ul{}
+#sidebar .sidebar_content ul li{
+    padding: 10px 0px 10px 0px;
+}
+#sidebar .sidebar_content ul li a{
+    color: black;
+    font-size: 20px;
+}
+#sidebar .sidebar_content ul .feature_link{
+    font-weight: 600;
+}
+#sidebar .sidebar_content .feature_drop_down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sidebar .sidebar_content ul li a img{}
+/* Sidebar End  */

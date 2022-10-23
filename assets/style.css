@@ -335,11 +335,15 @@ body {
     padding: 10px 25px;
     height: calc(100vh - 135px);
 }
-#sidebar .sidebar_content a i{
+#sidebar .sidebar_close{
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 30px;
+    top: 15px;
     font-size: 20px;
+    z-index: 999;
+}
+#sidebar .sidebar_close :active{
+    color: red;
 }
 #sidebar .sidebar_content ul{}
 #sidebar .sidebar_content ul li{

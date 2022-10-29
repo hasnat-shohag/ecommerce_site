@@ -1,0 +1,340 @@
+body
+  font-family: 'Open Sans', sans-serif
+  position: relative
+
+.container
+  width: 1200px
+  margin: auto
+
+/* header part start
+
+#header
+  border-bottom: 1px solid gray
+  margin: 0 auto
+
+  .content
+    display: flex
+
+    .left p
+      font-size: 0.813rem
+      color: rgb(75, 72, 72)
+
+    .right
+      /* border: 1px solid red;
+      flex: 1
+      font-size: 0.813rem
+
+      ul
+        justify-content: flex-end
+
+        /* border: 1px solid red;
+        display: flex
+        align-items: center
+        gap: 20px
+
+        li
+          display: flex
+          flex-direction: row
+          align-items: center
+          gap: 10px
+          cursor: pointer
+
+          .currency
+            position: relative
+
+          i, a
+            color: rgb(104, 100, 100)
+
+
+/* #header .content .right ul li i{
+ *    align-items: center;
+ *    align-content: center;
+ *}
+
+
+#header .content .right ul li
+  position: relative
+
+  ul
+    width: 120px
+    position: absolute
+    top: 25px
+    left: 0
+    visibility: hidden
+    opacity: 0
+    display: block
+    background-color: white
+    outline: 1px solid black
+    border-radius: 10px
+    z-index: 999
+    padding: 10px
+    height: 100px
+    box-sizing: border-box
+    transition: 0.3s
+
+    /* border: 1px solid red;
+
+    li
+      padding: 5px
+      margin: 0 auto
+
+  &:hover > ul
+    visibility: visible
+    opacity: 1
+    z-index: 1000
+
+/* header part end
+
+/* Navbar Part Start
+
+#navbar
+  padding-top: 30px
+
+  .content
+    position: relative
+    display: flex
+    justify-content: space-between
+    height: 40px
+    align-items: center
+
+    .left
+      display: flex
+      margin-right: 20px
+      justify-content: space-between
+      align-items: center
+
+      .logo
+        padding: 0px 50px 0px 0px
+
+
+      .nav a i
+        color: #333e48
+
+    .mid
+      flex: 1
+
+      /* border: 1px solid red;
+      box-sizing: border-box
+
+      form
+        height: 100%
+        border: 2px solid #e0bf1d
+        display: flex
+        justify-content: space-between
+        align-items: center
+        box-sizing: border-box
+        border-radius: 20px
+
+        input
+          /* border: none;
+          width: 70%
+          height: 100%
+          outline: 0
+          border: none
+          background: transparent
+          padding: 0px 10px 0px 20px
+
+        select
+          color: #606060
+          width: 20%
+          height: 100%
+          background: transparent
+          border: none
+          margin-right: 10px
+
+          /* padding-right: 15px;
+
+        button
+          height: 100%
+          width: 10%
+          background-color: #fed700
+          border-bottom-right-radius: 15px
+          border-top-right-radius: 15px
+          border: 1px solid #fed700
+
+          i
+            font-size: 25px
+
+            /* font-weight: 400;
+
+    .right
+      margin-left: 40px
+
+      ul
+        display: flex
+        justify-content: space-between
+        gap: 20px
+        align-content: center
+        height: 100%
+
+        li
+          position: relative
+
+          /* padding: 0px 15px 0px 15px;
+
+          a
+            position: relative
+            color: #333e48
+
+            i
+              margin-right: 20px
+
+
+            .total-qty
+              position: absolute
+              background-color: #fed700
+              color: #333e48
+              padding: 5px
+              border-radius: 30px
+              bottom: -19px
+              left: 13px
+              text-align: center
+
+/* #navbar .content .right ul li a .cart:hover #navbar .content .right .cart_content{
+ *    opacity: 0;
+ *    visibility: hidden;
+ *}
+
+.cart_content
+  position: absolute
+  width: 330px
+  padding: 10px
+  box-sizing: border-box
+  opacity: 0
+  visibility: hidden
+
+  /* border: 1px solid red;
+  top: 50px
+  right: 0
+  background: white
+  box-shadow: 1px 1px 1px 1px #554747
+  border: 1px solid #554747
+  border-radius: 5px
+  z-index: 999
+
+.cart_content_show
+  opacity: 1
+  visibility: visible
+  transition-duration: .4s
+
+#navbar .content .right .cart_content
+  .cart_elements
+    display: flex
+    flex-direction: column
+    padding: 0
+
+    > li
+      margin-bottom: 10px
+      border-bottom: 1px solid #c0c0c0
+      padding-bottom: 10px
+
+    .cart_elements_item
+      display: flex
+
+      /* border: 1px solid green;
+      padding: 0
+
+      li
+        /* border: 1px solid #333e48;
+
+
+        h3
+          margin: 0
+          padding-bottom: 5px
+          color: #1b6dba
+
+
+  .cart_btn
+    display: flex
+    justify-content: space-around
+
+    a
+      background-color: rgb(191, 189, 189)
+      padding: 10px 25px
+      border-radius: 20px
+      color: black
+      font-weight: 600
+
+      &:hover
+        background-color: rgb(62, 62, 61)
+        transition-duration: 0.3s
+        color: white
+
+/* Navbar Part End
+
+/* Sidebar Start
+
+.sidebar
+  position: absolute
+  width: 350px
+  height: 100vh
+
+  /* border: 1px solid red;
+  left: -350px
+  top: 0
+  box-sizing: border-box
+  background-color: white
+  opacity: 0
+  visibility: hidden
+  transition-duration: 0.3s
+
+.sidebar_show
+  opacity: 1
+  left: 0
+  visibility: visible
+
+#sidebar
+  .sidebar_content
+    overflow-y: scroll
+
+    /* border: 1px solid blue;
+
+    .sidebar_content_top
+      padding: 10px 25px
+      height: calc(100vh - 135px)
+
+  .sidebar_close
+    position: absolute
+    right: 30px
+    top: 15px
+    font-size: 20px
+    z-index: 999
+
+    \:active
+      color: red
+
+  .sidebar_content
+    ul
+      li
+        padding: 10px 0px 10px 0px
+
+        a
+          color: black
+          font-size: 20px
+
+      .feature_link
+        font-weight: 600
+
+    .feature_drop_down
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+
+  footer
+    background-color: #c0c0c0
+    padding: 40px 0px
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+    .footer_content
+      display: flex
+      justify-content: space-around
+      font-size: 18px
+
+      li a
+        color: black
+
+/* Sidebar End

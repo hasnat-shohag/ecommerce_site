@@ -343,6 +343,7 @@ body {
     z-index: 999;
 }
 #sidebar .sidebar_close :active{
+    
     color: red;
 }
 #sidebar .sidebar_content ul{}
@@ -379,3 +380,4 @@ body {
     color: black;
 }
 /* Sidebar End  */
+

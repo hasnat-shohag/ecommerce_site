@@ -1,292 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ecommerce Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/pavicon.png" />
+    <head>
+        <title>Ecommerce Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/images/pavicon.png" />
 
-    <meta charset="UTF-8" />
-    <meta name="robots" content="index, follow" />
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow" />
 
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="5000000" />
-    <!-- <meta http-equiv="refresh" content="5"> -->
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="5000000" />
+        <!-- <meta http-equiv="refresh" content="5"> -->
 
-    <meta name="keywords" content="class one, html learn" />
-    <meta name="description" content="you learn every things about html" />
-    <meta name="author" content="mr abdul kuddus" />
-    <meta name="copyrigth" content="www.mysite.com" />
-    <meta name="revisit" content="5 days" />
+        <meta name="keywords" content="class one, html learn" />
+        <meta name="description" content="you learn every things about html" />
+        <meta name="author" content="mr abdul kuddus" />
+        <meta name="copyrigth" content="www.mysite.com" />
+        <meta name="revisit" content="5 days" />
 
-    <meta property="og:title" content="html learn" />
-    <meta property="og:site_name" content="adfas" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://" />
-    <meta property="og:image" content="http://" />
-    <meta property="og:image:width" content="600" />
-    <meta property="og:image:height" content="315" />
+        <meta property="og:title" content="html learn" />
+        <meta property="og:site_name" content="adfas" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://" />
+        <meta property="og:image" content="http://" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
 
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="http://" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <!-- <link rel="stylesheet" href="./fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./assets/styles/default.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-  </head>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="http://" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- <link rel="stylesheet" href="./fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/styles/default.css" />
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+    </head>
 
-  <body>
-    <!-- Header Part Start -->
-    <header id="header">
-      <div class="container">
-        <div class="content">
-          <div class="left">
-            <p>Welcome to Worldwide Electronics Store</p>
-          </div>
-          <div class="right">
-            <ul>
-              <li>
-                <i class="fas fa-location"></i>
-                <a href="#">Store Locator</a>
-              </li>
-              <li>
-                <span>|</span>
-              </li>
-              <li>
-                <i class="fas fa-truck"></i>
-                <a href="#">Track Your Order</a>
-              </li>
-              <li>
-                <span>|</span>
-              </li>
-              <li class="currency">
-                <i class="fas fa-dollar"></i>
-                <a href="#">Dollar (US)</a>
-                <i class="fas fa-arrow-down"></i>
-                <ul id="pop-up-currency">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Deutsch</a></li>
-                  <li><a href="#">Espanol</a></li>
-                </ul>
-              </li>
-              <li>
-                <span>|</span>
-              </li>
-              <li>
-                <i class="fas fa-user"></i>
-                <a href="#">Register</a>
-                <span>or</span>
-                <a href="#">Sign in</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Header Part End -->
-
-    <!-- Nav part start -->
-    <div id="navbar">
-      <div class="container">
-        <div class="content">
-          <div class="left">
-            <div class="logo">
-              <a href="#"><img src="./assets/images/logo.png" alt="logo" /></a>
+    <body>
+        <!-- Header Part Start -->
+        <header id="header">
+            <div class="container">
+                <div class="content">
+                    <div class="left">
+                        <p>Welcome to Worldwide Electronics Store</p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <i class="fas fa-location"></i>
+                                <a href="#">Store Locator</a>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-truck"></i>
+                                <a href="#">Track Your Order</a>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li class="currency">
+                                <i class="fas fa-dollar"></i>
+                                <a href="#">Dollar (US)</a>
+                                <i class="fas fa-arrow-down"></i>
+                                <ul id="pop-up-currency">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Deutsch</a></li>
+                                    <li><a href="#">Espanol</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>|</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-user"></i>
+                                <a href="#">Register</a>
+                                <span>or</span>
+                                <a href="#">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="nav" class="nav">
-              <a href="#">
-                <i class="fas fa-bars"></i>
-              </a>
+        </header>
+        <!-- Header Part End -->
+
+        <!-- Nav part start -->
+        <div id="navbar">
+            <div class="container">
+                <div class="content">
+                    <div class="left">
+                        <div class="logo">
+                            <a href="#"
+                                ><img src="./assets/images/logo.png" alt="logo"
+                            /></a>
+                        </div>
+                        <div id="nav" class="nav">
+                            <a href="#">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mid">
+                        <form action="#">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Search for Products"
+                                required
+                            />
+                            <select name="" id="">
+                                <option value="one" selected>
+                                    All catagories
+                                </option>
+                                <option value="two">Two</option>
+                                <option value="three">Three</option>
+                                <option value="four">Four</option>
+                            </select>
+                            <button class="search_btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-code-compare"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="cart fas fa-cart-shopping"></i>
+                                    <span class="total-qty">2</span>
+                                    <span class="total-amount">$1785.00</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="cart_content">
+                            <ul class="cart_elements">
+                                <li>
+                                    <ul class="cart_elements_item">
+                                        <li>
+                                            <img
+                                                src="./assets/images/headphone.jpg"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li>
+                                            <h3>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur
+                                            </h3>
+                                            <span>1 × $1,100.00</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-close"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="cart_elements_item">
+                                        <li>
+                                            <img
+                                                src="./assets/images/headphone.jpg"
+                                                alt=""
+                                            />
+                                        </li>
+                                        <li>
+                                            <h3>Lorem ipsum dolor sit amet</h3>
+                                            <span>1 × $1,100.00</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-close"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="cart_btn">
+                                <a href="#">View cart</a>
+                                <a href="#">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="mid">
-            <form action="#">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Search for Products"
-                required
-              />
-              <select name="" id="">
-                <option value="one" selected>All catagories</option>
-                <option value="two">Two</option>
-                <option value="three">Three</option>
-                <option value="four">Four</option>
-              </select>
-              <button class="search_btn">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-          </div>
-          <div class="right">
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fas fa-code-compare"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fas fa-heart"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="cart fas fa-cart-shopping"></i>
-                  <span class="total-qty">2</span>
-                  <span class="total-amount">$1785.00</span>
-                </a>
-              </li>
-            </ul>
-            <div class="cart_content">
-              <ul class="cart_elements">
-                <li>
-                  <ul class="cart_elements_item">
-                    <li><img src="./assets/images/headphone.jpg" alt="" /></li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                      <span>1 × $1,100.00</span>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-close"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="cart_elements_item">
-                    <li><img src="./assets/images/headphone.jpg" alt="" /></li>
-                    <li>
-                      <h3>Lorem ipsum dolor sit amet</h3>
-                      <span>1 × $1,100.00</span>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-close"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="cart_btn">
-                <a href="#">View cart</a>
-                <a href="#">Checkout</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Nav part end -->
-    <!-- Side bar Start  -->
-    <div id="sidebar" class="sidebar">
-      <a class="sidebar_close" href="#">
-        <i class="fas fa-close"></i>
-      </a>
-      <div class="sidebar_content">
-        <div class="sidebar_content_top">
-          <a href="#">
-            <img src="./assets/images/logo.png" alt="" />
-          </a>
-
-          <ul>
-            <li class="feature_link"><a href="#">Value of the Day</a></li>
-            <li class="feature_link"><a href="#">Top 100 offers</a></li>
-            <li class="feature_link"><a href="#">New Arrival</a></li>
-            <li class="feature_drop_down">
-              <a href="#">Computers and Accesories</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Cameras, Audio & Video</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Mobiles & Tablets</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Movies, Music & Video</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">TV & Audio</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Watches & Eyewear</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Car, Motorbike & Industrial</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Accessories</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Car, Motorbike & Industrial</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Accessories</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Car, Motorbike & Industrial</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Accessories</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Car, Motorbike & Industrial</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-            <li class="feature_drop_down">
-              <a href="#">Accessories</a>
-              <i class="fas fa-angle-down"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <footer>
-        <ul class="footer_content">
-          <li><a href="#"> Privacy </a></li>
-          <li><a href="#"> Terms </a></li>
-          <li>
-            <a href="#">
-              <i class="fas fa-exclamation-circle"></i>
+        <!-- Nav part end -->
+        <!-- Side bar Start  -->
+        <div id="sidebar" class="sidebar">
+            <a class="sidebar_close" href="#">
+                <i class="fas fa-close"></i>
             </a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+            <div class="sidebar_content">
+                <div class="sidebar_content_top">
+                    <a href="#">
+                        <img src="./assets/images/logo.png" alt="" />
+                    </a>
 
-    <!-- Side bar End  -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+                    <ul>
+                        <li class="feature_link">
+                            <a href="#">Value of the Day</a>
+                        </li>
+                        <li class="feature_link">
+                            <a href="#">Top 100 offers</a>
+                        </li>
+                        <li class="feature_link">
+                            <a href="#">New Arrival</a>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Computers and Accesories</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Cameras, Audio & Video</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Mobiles & Tablets</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Movies, Music & Video</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">TV & Audio</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Watches & Eyewear</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Car, Motorbike & Industrial</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Accessories</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Car, Motorbike & Industrial</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Accessories</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Car, Motorbike & Industrial</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Accessories</a>
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Car, Motorbike & Industrial</a>
+                            <i class="fas fa-angle-right"></i>
+                        </li>
+                        <li class="feature_drop_down">
+                            <a href="#">Accessories</a>
+                            <i class="fas fa-angle-right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <ul class="footer_content">
+                    <li><a href="#"> Privacy </a></li>
+                    <li><a href="#"> Terms </a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Side bar End  -->
+
+        <!-- navber bottom start -->
+        <div class="bottom_nav">
+            <div class="container">
+                <div class="content">
+                    <div class="left">
+                        <div class="all_category_trigger">
+                            <a href="#">
+                                <i class="fas fa-list"></i>
+                                All Categories
+                            </a>
+                        </div>
+                        <div class="all_category_list error_handle">
+                            <ul>
+                                <li class="feature_link">
+                                    <a href="#">Value of the Day</a>
+                                </li>
+                                <li class="feature_link">
+                                    <a href="#">Top 100 offers</a>
+                                </li>
+                                <li class="feature_link">
+                                    <a href="#">New Arrival</a>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Computers and Accesories</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Cameras, Audio & Video</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Mobiles & Tablets</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Movies, Music & Video</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">TV & Audio</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Watches & Eyewear</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Car, Motorbike & Industrial</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Accessories</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Car, Motorbike & Industrial</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                                <li class="feature_drop_down">
+                                    <a href="#">Accessories</a>
+                                    <i class="fas fa-angle-right"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mid">
+                        <div class="short_links">
+                            <ul>
+                                <li>
+                                    <a href="#"> Super Deals 
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Featured Brands </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Trending Styles </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Gift Cards </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="#"> Free Shipping on Orders $50+ </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navber bottom end -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

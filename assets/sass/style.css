@@ -1,3 +1,26 @@
+/* reset css */
+body, html {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+
+div, ul, header, section, nav, footer, main {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -8,6 +31,7 @@ body {
   margin: auto;
 }
 
+/* common css  */
 /* header part start */
 #header {
   border-bottom: 1px solid gray;
@@ -255,6 +279,7 @@ body {
   position: absolute;
   width: 350px;
   height: 100vh;
+  z-index: 999;
   /* border: 1px solid red; */
   left: -350px;
   top: 0;
@@ -331,6 +356,7 @@ body {
   min-width: 250px;
 }
 .bottom_nav .content .left .all_category_trigger {
+  cursor: pointer;
   background-color: #fff444;
   position: relative;
   border-top-left-radius: 5px;
@@ -345,8 +371,31 @@ body {
   padding-right: 7px;
 }
 .bottom_nav .content .left .all_category_list {
+  width: 100%;
   position: absolute;
-  visibility: hidden;
+  background-color: #f5f5f5;
+  padding: 0px 15px;
+  transition-duration: 0.3s;
+}
+.bottom_nav .content .left .all_category_list ul li {
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(51, 51, 255, 0.2);
+}
+.bottom_nav .content .left .all_category_list ul li a {
+  color: #333;
+}
+.bottom_nav .content .left .all_category_list ul li:hover, .bottom_nav .content .left .all_category_list ul li:hover a {
+  font-weight: bold;
+  color: #121212;
+  background-color: #ededed;
+}
+.bottom_nav .content .left .all_category_list ul .feature_link {
+  font-weight: 600;
+}
+.bottom_nav .content .left .all_category_list ul .feature_drop_down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .bottom_nav .content .mid {
   flex: 1;
@@ -358,14 +407,29 @@ body {
   gap: 20px;
 }
 .bottom_nav .content .mid .short_links ul li a {
-  color: black;
+  color: #605F5F;
   font-weight: bold;
+}
+.bottom_nav .content .mid .short_links ul li a:hover {
+  color: #000000;
 }
 .bottom_nav .content .mid .short_links ul li:nth-of-type(1) a {
   color: red;
 }
-.bottom_nav .content .right {
-  display: block;
+.bottom_nav .content .right a {
+  color: #333e48;
+}
+
+.error_handle {
+  visibility: hidden;
+  opacity: 0;
+  top: 100px;
+}
+
+.show_all_category_list {
+  visibility: visible;
+  opacity: 1;
+  top: 42px;
 }
 
 /*Bottom Nav End *//*# sourceMappingURL=style.css.map */

@@ -1,3 +1,26 @@
 {
-  "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        // This is Default.
+        // {
+        //     "format": "expanded",
+        //     "extensionName": ".css",
+        //     "savePath": null
+        // },
+        // You can add more
+        // {
+        //     "format": "compressed",
+        //     "extensionName": ".min.css",
+        //     "savePath": "/dist/css"
+        // },
+        // More Comple
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            // "savePath": "${workspaceRoot}\\styles\\styles.css"
+            "savePath": "/assets/styles"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": ["/assets/sass/style.sass"]
 }

@@ -1,6 +1,8 @@
 {
     "prettier.tabWidth": 4,
-    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.autoprefix": [
+    
+    ],
     "liveSassCompile.settings.formats": [
         // This is Default.
         // {

@@ -22,5 +22,5 @@ const category_selector = document.querySelector(".all_category_trigger");
 category_selector.addEventListener('click', (e)=>{
     e.preventDefault();
     // console.log("clicked category");
-    document.querySelector('.error_handle').classList.toggle("show_all_category_list");
+    document.querySelector('.all_category_list').classList.toggle("active");
 })

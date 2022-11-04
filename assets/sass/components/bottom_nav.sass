@@ -1,3 +1,5 @@
+@import "../common/reset"
+
 .bottom_nav
 
     .content
@@ -6,10 +8,11 @@
 
         .left
             min-width: 250px
+            position: relative
+
             .all_category_trigger
                 cursor: pointer
                 background-color: #fff444
-                position: relative
                 border-top-left-radius: 5px
                 border-top-right-radius: 5px
                 padding: 10px 20px
@@ -20,16 +23,26 @@
 
                   i 
                     padding-right: 7px
-                  
+          
             .all_category_list
               width: 100%
               position: absolute
               background-color: #f5f5f5
               padding: 0px 15px 
               transition-duration: 0.3s
+              display: hidden
+              opacity: 0
+              top: 150px
+              
+
+              &.active
+                visibility: visible
+                opacity: 1
+                top: 100%
+
               ul 
                 li 
-                  padding: 10px 0px
+                  padding: 8px 0px
                   border-bottom: 1px solid #33f3
 
                   a 
@@ -38,6 +51,9 @@
                     font-weight: bold
                     color: #121212
                     background-color: #ededed
+                  
+                  &:last-child
+                    border: none
 
                 .feature_link
                   font-weight: 600
@@ -46,7 +62,8 @@
                   display: flex
                   justify-content: space-between
                   align-items: center
-            
+              
+              
         .mid
           flex: 1
           margin-left: 20px
@@ -69,12 +86,4 @@
             a 
               color: #333e48
 
-.error_handle
-  visibility: hidden
-  opacity: 0
-  top: 100px
 
-.show_all_category_list
-  visibility: visible
-  opacity: 1
-  top: 42px

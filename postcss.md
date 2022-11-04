@@ -39,7 +39,7 @@ Live Sass Compiler Workspace Settings:
 
 - Usage-command: 
     
-        npx postcss assets/styles/style.css -o assets/styles/output.css -w
+        npx postcss assets/styles/style.css -o assets/styles/style.css -w
 
 - At last: 
 
